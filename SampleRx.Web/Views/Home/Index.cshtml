@@ -1,0 +1,35 @@
+﻿@using SampleRx.Web.Utils;
+@model SampleRx.Dal.RxCompany
+@{
+    ViewBag.Title = "Quick Start";
+    var baseUrl = Request.Url.GetLeftPart(UriPartial.Authority);
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    @if (Model == null)
+    {
+        <p>To use this API, you must have your organization unique key.</p><br />
+        <p><strong>Example:</strong></p>
+        <ul>
+            @{
+                var sampleKey = Guid.NewGuid().ToString("N");
+            }
+
+            <li><strong>Organization Unique Key: </strong>@(sampleKey)</li>
+            <li><strong>Simple Call: </strong>@($"{baseUrl}/api/RxData?{AppConst.RxCompanyKey}={sampleKey}")</li>
+            <li><strong>Advanced Call: </strong>@($"{baseUrl}/api/RxData?{AppConst.RxCompanyKey}={sampleKey}&{AppConst.RxPageNumber}=1&{AppConst.RxPageSize}=50")</li>
+        </ul>
+    }
+    else
+    {
+        <p>Use the information below to get your anonymized prescription data</p><br />
+        <ul>
+            <li><strong>Organization Unique Key: </strong>@(Model.RxCompanyAccessKey)</li>
+            <li><strong>Simple Call: </strong>@($"{baseUrl}/api/RxData?{AppConst.RxCompanyKey}={Model.RxCompanyAccessKey}")</li>
+            <li><strong>Advanced Call: </strong>@($"{baseUrl}/api/RxData?{AppConst.RxCompanyKey}={Model.RxCompanyAccessKey}&{AppConst.RxPageNumber}=1&{AppConst.RxPageSize}=50")</li>
+        </ul>
+    }
+
+</div>
+

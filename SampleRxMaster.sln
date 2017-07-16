@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRx.Web", "SampleRx.Web\SampleRx.Web.csproj", "{74654784-64FC-4748-ABD9-ABFCA726F9C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRx.Dal", "SampleRx.Dal\SampleRx.Dal.csproj", "{7C87E171-F052-44A6-BD87-500A38BC7971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74654784-64FC-4748-ABD9-ABFCA726F9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74654784-64FC-4748-ABD9-ABFCA726F9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74654784-64FC-4748-ABD9-ABFCA726F9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74654784-64FC-4748-ABD9-ABFCA726F9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C87E171-F052-44A6-BD87-500A38BC7971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C87E171-F052-44A6-BD87-500A38BC7971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C87E171-F052-44A6-BD87-500A38BC7971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C87E171-F052-44A6-BD87-500A38BC7971}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
